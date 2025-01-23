@@ -43,7 +43,7 @@ app.get("/product/:pid", (req, res) => {
         res.status(200).send(`Your requested product is ${product.name}` )
     }
     else{
-        res.status(404).send(`Product not found`)
+        res.status(404).send("Product not found")
     }
     res.send(`You have requested product ${req.params.pid}`)
 
